@@ -1,0 +1,65 @@
+<?php
+/**
+ * The template for displaying the footer
+ *
+ * Contains footer content and the closing of the #main and #page div elements.
+ *
+ * @package WordPress
+ * @subpackage Twenty_Thirteen
+ * @since Twenty Thirteen 1.0
+ */
+?>
+
+		</div><!-- #main -->
+		
+				<!--footer area-->
+					<div class="container-fluid" >
+							<div class="col-md-12 foot-back">
+							   <!--<p style="text-align:center;"> &copy; 2016 Codoid All Right Reserved</p>-->
+							   <div class="col-md-5 aboutthro">
+									<h2>About Codoid</h2>
+									<p>We are a software company and a community of passionate, purpose-led individuals. We think disruptively to deliver technology to address our clients' toughest challenges, all while seeking to revolutionize the IT industry and create positive social change.</p>
+								</div>
+
+								<div class="col-md-5 footer-social">
+									<h2>Connect with us</h2>
+									<ul>
+										<li><img src="<?php echo site_url();?>/wp-content/themes/twentythirteen-child/img/twitter_footer.png"  class="footer_img"></li>
+										<li><img src="<?php echo site_url();?>/wp-content/themes/twentythirteen-child/img/facebook_footer.png" class="footer_img"></li> 
+										<li><img src="<?php echo site_url();?>/wp-content/themes/twentythirteen-child/img/youtube_footer.png" class="footer_img"></li>
+										<li><img src="<?php echo site_url();?>/wp-content/themes/twentythirteen-child/img/linkedin_footer.png" class="footer_img"></li> 
+										<li><img src="<?php echo site_url();?>/wp-content/themes/twentythirteen-child/img/weibo_footer.png" class="footer_img"></li> 
+										<li><img src="<?php echo site_url();?>/wp-content/themes/twentythirteen-child/img/google_plus_footer.png" class="footer_img"></li>
+									<ul>
+								</div>
+
+								<div class="clearfix"></div>
+
+								 <div class="col-md-9 fotter-menudiv footer-menu">
+									<ul> 
+										<li class="menu-item"><a href="#">Home</a></li>
+										<li><a href="#">Products</a></li>
+										<li><a href="#">Services</a></li>
+										<li><a href="#">Blogs</a></li>
+										<li><a href="#">Case studies</a></li>
+										<li><a href="#">Contact</a></li>
+									</ul>
+												<p class="allright"> &copy; 2016 Codoid All Right Reserved</p>
+
+								</div>
+							   
+							</div>
+                       </div>
+<!---end of footer-->
+
+<script src="<?php echo site_url();?>/wp-content/themestwentythirteen-child/assets/js/jquery.js"></script> 
+<script src="<?php echo site_url();?>/wp-content/themestwentythirteen-child/assets/js/bootstrap.js"></script>
+</body>
+</html>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+
+	<?php wp_footer(); ?>
+</body>
+</html>

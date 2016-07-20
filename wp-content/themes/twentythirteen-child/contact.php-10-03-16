@@ -1,0 +1,80 @@
+<?php
+/**
+template name: Contact Template
+ */
+get_header(); ?>
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+       
+            <div class="container-fluid">
+                           
+                           <div class="contact-banner">
+					      </div><!-- end of banner-->
+          </div>
+
+			      <div class="container-fluid contact-details">
+                     <div class="col-md-12 contact-panel content-blub">
+					   <div class="col-md-4 blue col">
+					      <div class="contact-details-green">
+						    <?php $id = 74;
+							      $post = get_page($id);
+								  $content = apply_filters('the_content', $post->post_content);
+								  $content = str_replace(']]>', ']]>', $content);
+								  $cus_page_titl = $post->post_title;
+								  ?>
+								  <h4><img src="<?php echo site_url();?>/wp-content/themes/twentythirteen-child/images/h1-bullet-blue.png">&nbsp;<?php echo  $cus_page_titl; ?></h4>
+								  <?php echo $content;?>
+                          </div>
+					   </div>
+
+					   <div class="col-md-4 col blue">
+							 <div class=" contact-details-orange">
+								  <h4><img src="<?php echo site_url();?>/wp-content/themes/twentythirteen-child/images/h1-bullet-blue.png">&nbsp;GENERAL</h4>
+								  <p>Digital Base BVBA<br/>
+
+										Broekstraat 36<br/>
+										3001 Leuven<br/>
+										Belgium<br/><br/>
+
+										Tel +32 (0)16 36 00 36<br/>
+										Fax +32 (0)16 36 00 39<br/>
+										Email info@digitalbase.eu<br/><br/>
+
+										TVA BE-0866.257.609 <br/>
+										BANK 001-4305561-01 (Fortis)<br/>
+										IBAN BE43 0014 3055 6101<br/>
+										BIC GEBABEBB</p>
+							  </div>
+					   </div>
+
+					   <div class="col-md-4 col orange">
+						   <div class="contact-details-orange">
+							   <h4><img src="<?php echo site_url();?>/wp-content/themes/twentythirteen-child//images/h1-bullet-orange.png">&nbsp;Mail Us</h4>
+							   <?php echo do_shortcode('[contact-form-7 id="71" title="contact codoid"]');?>
+						   </div>
+					   </div>
+
+					   <div class="googlemap contact-details-green  red">
+					        <h4><img src="<?php echo site_url();?>/wp-content/themes/twentythirteen-child/images/h1-bullet-red.png">&nbsp;ROADMAP</h4>
+								<div class="googlemapiframe">
+								        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.9285817775008!2d79.08053931519275!3d21.155240288823705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0e8be5ca485%3A0xbe73f3b62805236a!2sKP+Ground+Bus+Stop!5e0!3m2!1sen!2sin!4v1455174139936" width="1030" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+								</div>
+					   </div>
+			   </div>
+
+<div style="clear:both;"></div>
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+
+
+                    
+
+
+
+
+
+
+
+<?php get_footer(); ?>
